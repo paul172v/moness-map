@@ -228,7 +228,7 @@ const Map = () => {
               </Marker>
             ))}
 
-          <ClickLogger />
+          {/* <ClickLogger /> */}
         </MapContainer>
 
         {/* Locate Me Button */}

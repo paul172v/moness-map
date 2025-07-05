@@ -54,12 +54,20 @@ export const miscList = [
     [30, 30]
   ),
   new Misc(
+    "Restaurant/Bar",
+    56.61583462879592,
+    -3.862429261207581,
+    "/restaurant.svg",
+    [30, 30]
+  ),
+  new Misc(
     "Pool",
     56.61574653376388,
     -3.8618659973144536,
     "/pool.svg",
     [30, 30]
   ),
+  new Misc("Spa", 56.61584347924518, -3.861908912658692, "/spa.svg", [30, 30]),
   new Misc(
     "Marquee",
     56.616380812187465,
