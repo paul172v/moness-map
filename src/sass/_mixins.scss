@@ -1,0 +1,46 @@
+@use "/src/sass/colors";
+
+@mixin pulse($color) {
+  @keyframes pulse-red {
+    0%,
+    100% {
+      text-shadow: 0 0 5px #{$color}, 0 0 10px #{$color}, 0 0 20px #{$color},
+        0 0 40px #{lighten($color, 10%)}, 0 0 80px #{lighten($color, 20%)};
+    }
+    50% {
+      text-shadow: 0 0 10px #{$color}, 0 0 20px #{$color}, 0 0 30px #{$color},
+        0 0 50px #{lighten($color, 10%)}, 0 0 100px #{lighten($color, 20%)};
+    }
+  }
+}
+
+////// Neon Effects //////
+@mixin neon-effect-red {
+  color: $font-color-red;
+  animation: pulse-red 1.5s infinite alternate;
+  text-shadow: 0 0 5px $font-color-red, 0 0 10px $font-color-red,
+    0 0 20px $font-color-red, 0 0 40px lighten($font-color-red, 10%),
+    0 0 80px lighten($font-color-red, 20%);
+}
+
+@mixin neon-effect-blue {
+  @keyframes pulse-blue {
+    0%,
+    100% {
+      text-shadow: 0 0 5px #{$font-color-blue}, 0 0 10px #{$font-color-blue},
+        0 0 20px #{$font-color-blue}, 0 0 40px #{lighten($font-color-blue, 10%)},
+        0 0 80px #{lighten($font-color-blue, 20%)};
+    }
+    50% {
+      text-shadow: 0 0 10px #{$font-color-blue}, 0 0 20px #{$font-color-blue},
+        0 0 30px #{$font-color-blue}, 0 0 50px #{lighten($font-color-blue, 10%)},
+        0 0 100px #{lighten($font-color-blue, 20%)};
+    }
+  }
+
+  color: $font-color-blue;
+  animation: pulse-blue 1.5s infinite alternate;
+  text-shadow: 0 0 5px $font-color-blue, 0 0 10px $font-color-blue,
+    0 0 20px $font-color-blue, 0 0 40px lighten($font-color-blue, 10%),
+    0 0 80px lighten($font-color-blue, 20%);
+}

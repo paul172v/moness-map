@@ -1,0 +1,37 @@
+.header {
+  height: 10svh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 10svh;
+}
+
+.form-container {
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+
+.search-result-message {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}
+
+.map {
+  height: 90svh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .map {
+    height: 85svh;
+    width: 100vw;
+    max-width: 768px;
+  }
+
+  .header {
+    height: 15svh;
+  }
+}
