@@ -45,15 +45,38 @@ export class Misc {
   }
 }
 
-export const reception = new Misc(
-  "Reception",
-  56.61594463631259,
-  -3.8622468709945683,
-  "/reception.svg",
-  [30, 30]
-);
+export const miscList = [
+  new Misc(
+    "Reception",
+    56.61594463631259,
+    -3.8622468709945683,
+    "/reception.svg",
+    [30, 30]
+  ),
+  new Misc(
+    "Pool",
+    56.61574653376388,
+    -3.8618659973144536,
+    "/pool.svg",
+    [30, 30]
+  ),
+  new Misc(
+    "Marquee",
+    56.616380812187465,
+    -3.8636684417724614,
+    "/tent.svg",
+    [30, 30]
+  ),
+  new Misc(
+    "Duck Pond",
+    56.61621505304551,
+    -3.8600206375122075,
+    "/duck.svg",
+    [30, 30]
+  ),
+];
 
-export const list = [
+export const cottageList = [
   new Cottage(1, "FARM", 56.615897408084734, -3.861034512519837),
   new Cottage(2, "CORNER", 56.615867890412325, -3.86095404624939),
   new Cottage(3, "STABLE", 56.61582951740369, -3.8611149787902836),

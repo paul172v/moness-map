@@ -12,7 +12,10 @@ import "./leaflet.css";
 import "leaflet-rotatedmarker";
 import "./Map.module.scss";
 import classes from "./Map.module.scss";
-import { reception, list as initialList } from "../../dev/nav-list";
+import {
+  miscList,
+  cottageList as workingCottageList,
+} from "../../dev/nav-list";
 
 // Blue dot icon
 const blueDotIcon = L.icon({
@@ -59,7 +62,7 @@ const Map = () => {
   const [searchResultMessage, setSearchResultMessage] = useState("");
 
   // Cottages list state
-  const [cottages, setCottages] = useState(initialList);
+  const [cottages, setCottages] = useState(workingCottageList);
 
   // Continuously track user position
   useEffect(() => {
@@ -189,10 +192,12 @@ const Map = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
           />
 
-          {/* Reception marker */}
-          <Marker position={initialPosition} icon={reception.icon}>
-            <Popup>Reception</Popup>
-          </Marker>
+          {/* Misc markers */}
+          {miscList.map((item) => (
+            <Marker position={[item.lat, item.lng]} icon={item.icon}>
+              <Popup>{item.name}</Popup>
+            </Marker>
+          ))}
 
           {/* User position */}
           {userPosition && (
