@@ -67,7 +67,7 @@ export const miscList = [
     "/pool.svg",
     [30, 30]
   ),
-  new Misc("Spa", 56.61584347924518, -3.861908912658692, "/spa.svg", [30, 30]),
+  new Misc("Spa", 56.61589697850309, -3.861908912658692, "/spa.svg", [30, 30]),
   new Misc(
     "Marquee",
     56.616380812187465,
