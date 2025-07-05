@@ -14,7 +14,7 @@ export class Cottage {
     this.lng = lng;
     this.isActive = false;
     this.icon = L.icon({
-      iconUrl: "/src/assets/cabin.svg",
+      iconUrl: "/cabin.svg",
       iconSize: [30, 30],
       iconAnchor: [15, 15],
     });
@@ -49,7 +49,7 @@ export const reception = new Misc(
   "Reception",
   56.61594463631259,
   -3.8622468709945683,
-  "/src/assets/reception.svg",
+  "/reception.svg",
   [30, 30]
 );
 

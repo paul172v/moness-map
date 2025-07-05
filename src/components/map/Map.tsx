@@ -16,14 +16,14 @@ import { reception, list as initialList } from "../../dev/nav-list";
 
 // Blue dot icon
 const blueDotIcon = L.icon({
-  iconUrl: "/src/assets/blue-dot.svg",
+  iconUrl: "/blue-dot.svg",
   iconSize: [20, 20],
   iconAnchor: [10, 10],
 });
 
 // Arrow icon for heading
 const arrowIcon = L.icon({
-  iconUrl: "/src/assets/arrow-icon.svg",
+  iconUrl: "/arrow-icon.svg",
   iconSize: [30, 30],
   iconAnchor: [15, 15],
 });
@@ -150,7 +150,7 @@ const Map = () => {
       <header className={classes.header}>
         <img
           className={classes.logo}
-          src="/src/assets/moness-logo.jpg"
+          src="/moness-logo.jpg"
           alt="moness logo"
         />
         <div className={classes["form-container"]}>
@@ -179,7 +179,7 @@ const Map = () => {
         <MapContainer
           className={classes.map}
           center={initialPosition}
-          zoom={15}
+          zoom={20}
           scrollWheelZoom={true}
           ref={mapRef}
           style={{ height: "90svh", width: "100vw" }}
