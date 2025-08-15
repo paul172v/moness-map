@@ -35,7 +35,7 @@
 }
 /* hack that prevents hw layers "stretching" when loading new tiles */
 .leaflet-safari .leaflet-tile-container {
-  width: 100vw;
+  max-width: 100vw;
   height: 100svh;
   -webkit-transform-origin: 0 0;
 }
